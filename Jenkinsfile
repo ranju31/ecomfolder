@@ -7,7 +7,7 @@ pipeline{
   stages{
     stage('Checkout'){
       steps{
-        git branch 'master',url ''
+        git branch 'master',url 'https://github.com/ranju31/ecomfolder.git'
       }
     }
     stage('Build'){
@@ -23,7 +23,7 @@ pipeline{
     
     stage('Deploy'){
     steps{
-      bat 'java -jar C:/Program Files/Jenkins/woekspace/ecommercebackend/target/ecommercebackend-0.0.1-SNAPSHOT.JAR'
+      bat 'java -jar C:/Program Files/Jenkins/woekspace/ecommercebackend/target/ecommercebackend-0.0.1-SNAPSHOT.jar'
     }
   }
 }
