@@ -21,8 +21,10 @@ pipeline{
       }
     }
     
-    stage('Deploy')
+    stage('Deploy'){
     steps{
-      bat 'java .jar "C:/Program Files/Jenkins
+      bat 'java -jar C:/Program Files/Jenkins/woekspace/ecommercebackend/target/ecommercebackend-0.0.1-SNAPSHOT.JAR'
     }
   }
+}
+}
