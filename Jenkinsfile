@@ -7,7 +7,7 @@ pipeline{
   stages{
     stage('Checkout'){
       steps{
-        git branch: 'master',url:'git repo'
+        git branch: 'master',url:'https://github.com/ranju31/ecomfolder.git'
       }
     }
     stage('Build'){
