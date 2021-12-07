@@ -23,7 +23,7 @@ pipeline{
     
     stage('Deploy'){
     steps{
-      bat 'java -jar C:\Users\pdomedehalliogp\Desktop\spring boot\ECommerce-Angular-Spring-master\ecommercebackend/target/ecommercebackend-0.0.1-SNAPSHOT.jar'
+      bat 'java -jar C:/Program Files/Jenkins/workspace/target/ecommercebackend-0.0.1-SNAPSHOT.jar'
     }
   }
 }
